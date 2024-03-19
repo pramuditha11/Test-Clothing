@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Shop - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="womens.html">Women's Section</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <table>
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Available Quantity</th>
+            <th>Size</th>
+            <th>Image</th>
+            <th>Add to Cart</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>T-Shirt</td>
+            <td>$20</td>
+            <td>10</td>
+            <td>
+                <label><input type="radio" name="size_tshirt" value="S"> S</label>
+                <label><input type="radio" name="size_tshirt" value="M"> M</label>
+                <label><input type="radio" name="size_tshirt" value="L"> L</label>
+            </td>
+            <td><img src="Image/image1.jpg" alt="T-Shirt" width="150" height="150"></td>
+            <td><button onclick="addToCart('T-Shirt')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Jeans</td>
+            <td>$35</td>
+            <td>8</td>
+            <td>
+                <label><input type="radio" name="size_jeans" value="28"> 28</label>
+                <label><input type="radio" name="size_jeans" value="30"> 30</label>
+                <label><input type="radio" name="size_jeans" value="32"> 32</label>
+            </td>
+            <td><img src="Image/image2.jpg" alt="Jeans" width="150" height="150"></td>
+            <td><button onclick="addToCart('Jeans')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Hoodie</td>
+            <td>$45</td>
+            <td>5</td>
+            <td>
+                <label><input type="radio" name="size_hoodie" value="S"> S</label>
+                <label><input type="radio" name="size_hoodie" value="M"> M</label>
+                <label><input type="radio" name="size_hoodie" value="L"> L</label>
+            </td>
+            <td><img src="Image/image3.jpg" alt="Hoodie" width="150" height="150"></td>
+            <td><button onclick="addToCart('Hoodie')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Sweater</td>
+            <td>$30</td>
+            <td>12</td>
+            <td>
+                <label><input type="radio" name="size_sweater" value="S"> S</label>
+                <label><input type="radio" name="size_sweater" value="M"> M</label>
+                <label><input type="radio" name="size_sweater" value="L"> L</label>
+            </td>
+            <td><img src="Image/image4.jpg" alt="Sweater" width="150" height="150"></td>
+            <td><button onclick="addToCart('Sweater')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Dress</td>
+            <td>$50</td>
+            <td>6</td>
+            <td>
+                <label><input type="radio" name="size_dress" value="S"> S</label>
+                <label><input type="radio" name="size_dress" value="M"> M</label>
+                <label><input type="radio" name="size_dress" value="L"> L</label>
+            </td>
+            <td><img src="Image/image5.jpg" alt="Dress" width="150" height="150"></td>
+            <td><button onclick="addToCart('Dress')">Add to Cart</button></td>
+        </tr>
+      
+    </tbody>
+</table>
+
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clothing Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

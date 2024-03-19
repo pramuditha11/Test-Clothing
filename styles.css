@@ -1,0 +1,177 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+header h1 {
+    animation: slideInLeft 1s ease forwards;
+}
+
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+section {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.slideshow {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 300px; 
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slideshow img.active {
+    opacity: 1;
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+.animated-text {
+    display: inline-block;
+    animation: bounce 1s infinite;
+}
+.special-offers {
+    color: #FF5733; /* Orange */
+}
+
+.discounts {
+    color: #008000; /* Green */
+}
+
+.discount {
+    color: #FF4500; /* Red */
+}
+
+.dress {
+    color: #800080; /* Purple */
+}
+
+.tops {
+    color: #FF1493; /* Pink */
+}
+
+.free-shipping {
+    color: #0000FF; /* Blue */
+}
+.shop-now {
+    font-size: 24px; 
+}
+
